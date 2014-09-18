@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="navigation_main_sections">
+        <item>Your cards</item>
+        <item>Add cards</item>
+        <item>Reminders</item>
+        <item>Customize Google Now</item>
+    </string-array>
+
+    <array name="drawable_ids">
+        <item>@drawable/ic_action_contact_normal</item>
+        <item>@drawable/ic_training_add_pressed</item>
+        <item>@drawable/ic_action_reminder_normal</item>
+        <item>@drawable/ic_magic_wand_pressed</item>
+    </array>
+
+</resources>

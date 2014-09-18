@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/iconPicture"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignBottom="@+id/MDText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="22.0dip"
+        android:paddingRight="8.0dip"
+        android:scaleType="fitCenter"
+        tools:ignore="RtlSymmetry,ContentDescription" />
+
+    <com.kyler.search.mockup.design.tests.GoogleSearchTextView
+        android:id="@+id/MDText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:gravity="center_vertical"
+        android:minHeight="64.0dip"
+        android:paddingLeft="68.0dip"
+        android:paddingStart="64.0dip"
+        android:singleLine="true"
+        android:textColor="#ff727374"
+        android:textSize="22.0sp"
+        customfontdemo:fontName="Roboto-Light.ttf"
+        tools:ignore="RtlSymmetry" />
+
+</RelativeLayout>

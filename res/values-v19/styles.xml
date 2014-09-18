@@ -1,0 +1,58 @@
+<resources>
+
+    <style name="GoogleSearchMockup.Theme" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/GoogleSearchMockup.Theme.ActionBar</item>
+        <item name="android:actionBarWidgetTheme">@style/GoogleSearchMockup.Theme.Widget</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_action_back</item>
+        <item name="android:actionOverflowButtonStyle">@style/GoogleSearchMockup.Theme.OverFlow</item>
+    </style>
+
+    <style name="GoogleSearchMockup.Theme.Widget" parent="@android:style/Theme.Holo.Light">
+        <item name="android:textColorHint">#ff707070</item>
+        <item name="android:textColor">#ff707070</item>
+        <item name="android:itemTextAppearance">@style/GoogleSearchMockup.ThemeTextAppearance</item>
+    </style>
+
+    <style name="GoogleSearchMockup.ThemeTextAppearance" parent="android:TextAppearance.Medium">
+        <item name="android:fontFamily">sans-serif-thin</item>
+    </style>
+
+    <style name="GoogleSearchMockup.Theme.ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/google_search_mockup_theme_actionbar_color</item>
+        <item name="android:titleTextStyle">@style/GoogleSearchMockup.Theme.ActionBar.TitleTextStyle</item>
+        <item name="android:height">58.0dip</item>
+        <item name="android:icon">@android:color/transparent</item>
+        <item name="android:backgroundStacked">@color/google_search_mockup_theme_actionbar_color</item>
+        <item name="android:backgroundSplit">@color/google_search_mockup_theme_actionbar_color</item>
+    </style>
+
+    <style name="GoogleNavDrawer.MainSectionText" parent="android:TextAppearance.Medium">
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">21sp</item>
+        <item name="android:minHeight">@dimen/main_section_item_height</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:drawablePadding">10dp</item>
+    </style>
+
+    <style name="GoogleNavDrawer.SecondarySectionText" parent="GoogleNavDrawer.MainSectionText">
+        <item name="android:textSize">13sp</item>
+        <item name="android:minHeight">@dimen/secondary_section_item_height</item>
+    </style>
+
+    <style name="GoogleSearchMockup.Theme.ActionBar.TitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColorHint">#fffafafa</item>
+        <item name="android:textColor">#fffafafa</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+    </style>
+
+    <style name="GoogleSearchMockup.Theme.OverFlow" parent="@android:style/Widget.Holo.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_menu_moreoverflow_mtrl_alpha</item>
+    </style>
+
+</resources>

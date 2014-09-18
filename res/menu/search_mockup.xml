@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.kyler.search.mockup.material.SearchMockup" >
+
+    <group android:id="@+id/group1" >
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/ic_settings_l"
+            android:showAsAction="never"
+            android:title="@string/settings">
+        </item>
+        <item
+            android:id="@+id/HelpAndFeedback"
+            android:showAsAction="never"
+            android:title="@string/help_feedback">
+        </item>
+    </group>
+
+</menu>

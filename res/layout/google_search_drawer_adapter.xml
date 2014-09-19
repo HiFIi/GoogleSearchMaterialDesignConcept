@@ -8,14 +8,13 @@
 
     <ImageView
         android:id="@+id/iconPicture"
-        android:layout_width="56dp"
-        android:layout_height="56dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:layout_alignBottom="@+id/MDText"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_centerVertical="true"
-        android:paddingLeft="22.0dip"
-        android:paddingRight="8.0dip"
+        android:paddingLeft="16dp"
         android:scaleType="fitCenter"
         tools:ignore="RtlSymmetry,ContentDescription" />
 
@@ -25,11 +24,11 @@
         android:layout_height="wrap_content"
         android:ellipsize="marquee"
         android:gravity="center_vertical"
-        android:minHeight="64.0dip"
-        android:paddingLeft="68.0dip"
-        android:paddingStart="64.0dip"
+        android:paddingBottom="16dp"
+        android:paddingLeft="72dp"
+        android:paddingTop="18dp"
         android:singleLine="true"
-        android:textColor="#ff727374"
+        android:textColor="@color/navigation_drawer_item_text"
         android:textSize="22.0sp"
         customfontdemo:fontName="Roboto-Light.ttf"
         tools:ignore="RtlSymmetry" />

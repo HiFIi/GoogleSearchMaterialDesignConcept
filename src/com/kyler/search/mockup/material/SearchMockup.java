@@ -83,7 +83,7 @@ public class SearchMockup extends FragmentActivity {
 		getActionBar().setIcon(R.drawable.ic_drawer_white);
 
 		SpannableString s = new SpannableString("Google Search");
-		s.setSpan(new TypefaceSpan("sans-serif-thin"), 0, s.length(),
+		s.setSpan(new TypefaceSpan("sans-serif-light"), 0, s.length(),
 				Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
 
 		actionBar.setTitle(s);
@@ -93,7 +93,7 @@ public class SearchMockup extends FragmentActivity {
 		getActionBar().setHomeButtonEnabled(true);
 
 		ImageView view = (ImageView) findViewById(android.R.id.home);
-		view.setPadding(15, 0, 0, 0);
+		view.setPadding(16, 0, 0, 0);
 
 		setContentView(R.layout.search_mockup);
 
@@ -102,8 +102,6 @@ public class SearchMockup extends FragmentActivity {
 		mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
 
 		mDrawerList = (ListView) findViewById(R.id.left_drawer);
-
-		mDrawerList.setChoiceMode(ListView.CHOICE_MODE_SINGLE);
 
 		mDrawerLayout.setDrawerShadow(R.drawable.drawer_shadow,
 				GravityCompat.START);
@@ -145,9 +143,7 @@ public class SearchMockup extends FragmentActivity {
 			public void onDrawerClosed(View view) {
 
 				getActionBar().setIcon(R.drawable.ic_drawer_white);
-
 				setActionBarTitle();
-
 				invalidateOptionsMenu();
 
 			}
@@ -155,7 +151,6 @@ public class SearchMockup extends FragmentActivity {
 			public void onDrawerOpened(View drawerView) {
 
 				getActionBar().setIcon(R.drawable.ic_drawer_white);
-
 				setActionBarTitle();
 				invalidateOptionsMenu();
 
@@ -189,11 +184,6 @@ public class SearchMockup extends FragmentActivity {
 		return super.onCreateOptionsMenu(menu);
 	}
 
-	public void onStart() {
-		super.onStart();
-
-	}
-
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 
@@ -213,7 +203,7 @@ public class SearchMockup extends FragmentActivity {
 
 	private void setActionBarTitle() {
 		SpannableString s = new SpannableString("Google Search");
-		s.setSpan(new TypefaceSpan("sans-serif-thin"), 0, s.length(),
+		s.setSpan(new TypefaceSpan("sans-serif-light"), 0, s.length(),
 				Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
 
 		getActionBar().setTitle(s);
